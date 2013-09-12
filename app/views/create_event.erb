@@ -1,0 +1,11 @@
+<form method='POST' action='/events/create'>
+  <%= @signup_errors[:organizer_name] if @signup_errors %><br>
+  Organizer Name: <input type='text' name='organizer_name' placeholder='organizer name'><br>
+  <%= @signup_errors[:organizer_email] if @signup_errors %><br>
+  Organizer email: <input type='text' name='organizer_email' placeholder='organizer email'><br>
+  <%= @signup_errors[:title] if @signup_errors %><br>
+  Event Title: <input type='text' name='title' placeholder='event title'><br>
+  <%= @signup_errors[:date] if @signup_errors %><br>
+  Event Date: <input type='datetime' name='date' placeholder='YYYY-MM-DD'>
+  <input type='submit' value='submit'>
+</form>
